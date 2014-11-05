@@ -21,10 +21,10 @@ describe Child do
       expect(@child.gender).to eq("female")
     end
     it "is assigned a favColor" do
-      
+      expect(@child.favColor).to be_instance_of(String)
     end
     it "should increment the children variable by 1 when created" do
-
+      expect(@@grandchildren).to eq(1)
     end
     xit "should increment the grandchildren variable by 1 when created" do
 

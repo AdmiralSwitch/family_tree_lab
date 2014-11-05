@@ -27,7 +27,7 @@ describe Grandparent do
       expect(Grandparent.family).to be_kind_of(Array)
     end
     it "should have a way to access the grandchildren" do
-      expect(Grandparent.grandchildren).to eq(0)
+      expect(Grandparent.grandchildren).to be_kind_of(Integer)
     end
   end
 

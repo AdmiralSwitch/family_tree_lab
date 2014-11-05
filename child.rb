@@ -7,12 +7,12 @@ class Child < Parent
 
 	def initialize name, age, gender
 		super(name,age,gender)
-		@@favColor
+		@@favColor.sample
 		@@grandchildren +=1
 	end
 
 	def favColor
-    @@faveColor.sample
+    @@faveColor
 	end
 
 	def talking
